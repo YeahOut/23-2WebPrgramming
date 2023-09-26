@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        #div1, #div2 {
+            border: 1px solid black;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">DIV1: Click me to change background and text color</div>
+    <div id="div2">DIV2: Click me to append text</div>
+
+    <script>
+        document.getElementById('div1').addEventListener('click', function() {
+            this.style.backgroundColor = 'blue';
+            this.style.color = 'white';
+        });
+
+        document.getElementById('div2').addEventListener('click', function() {
+            var newText = document.createTextNode(" Appended Text.");
+            this.appendChild(newText);
+        });
+
+        // 이미지 생성 및 속성 설정
+        var imgElement = document.createElement('img');
+        imgElement.setAttribute('src', "C:\Users\최예인\Desktop\웹프3\asset\back.JPG"); 
+        //imgElement.setAttribute('alt', 'C:\Users\최예인\Desktop\웹프3\asset\back.JPG');
+        imgElement.setAttribute('width', '150px');
+        document.body.appendChild(imgElement);
+    </script>
+</body>
+
+</html>

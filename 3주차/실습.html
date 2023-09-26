@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title> Q1 </title>
+    <script language="JavaScript">
+        document.write("다음 이동 버튼을 클릭하여 이동할 웹사이트 주소를 입력하세요.");
+        document.write("<br/>");
+        function pop()
+        {
+            var input = prompt("이동할 웹 사이트 주소를 입력하세요.", "https://");
+            if (input) { 
+                window.location = input;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <br>
+    <input type="button" value="이동" onClick = "pop()">
+    <script language="JavaScript">
+        
+    </script>
+</body>
+
+</html>
