@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <title> 문제 2번</title>
+        <style type = "text/css">
+            @font-face{
+                font-family : NanumPen;
+                src:url('NanumPen.ttf')format('truetype');
+            }
+            h1 {color : black; font-family : NanumPen; font-size : 20pt;}
+            div {color : black; font-family : NanumPen; font-size:10pt;text-indent : -1em}
+            
+            .box01 {
+                position: absolute;
+                left : 30px;
+                top : 70px;
+                padding: 2px 20px;
+                width:500px;
+                height: 50px;
+                background-color : #FFFF00;
+                z-index : 1;
+                
+
+            }
+            .box02{
+                position: absolute;
+                left : 40px;
+                top : 90px;
+                padding: 2px 20px;
+                width:500px;
+                height: 50px;
+                background-color : #90EE90;
+                z-index : 2;
+            }
+            #box03{
+                position: relative;
+                left : 50px;
+                top : 80px;
+                padding: 2px 20px;
+                width:500px;
+                height: 50px;
+                background-color : #00FFFF;
+                z-index : 3;
+                &:hover{background-color:red;}
+            }
+        </style>
+    </head>
+    <body>
+        <h1>박스의 위치</h1><br>
+        <div class = "box01"><b>절대 위치 설정 적용 - left 30px, top 70px</b></div>
+        <div class = "box02"><b>절대 위치 설정 적용 - left 40px, top 90px</b></div>
+        <div id = "box03"><b>상대 위치 설정 적용 - left 50px, top 80px</b></div>
+       
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide Map</title>
+    <style>
+        #map {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <label>
+        <input type="radio" name="visibility" onclick="toggleVisibility(true)"> 보이기
+    </label>
+    <label>
+        <input type="radio" name="visibility" onclick="toggleVisibility(false)" checked> 숨기기
+    </label>
+
+    <div id="mapLayer" style="display: none;">
+        <img id="map" src="map.jpg" alt="Map">
+    </div>
+
+    <script>
+        function toggleVisibility(isVisible) {
+            const mapLayer = document.getElementById('mapLayer');
+            mapLayer.style.display = isVisible ? 'block' : 'none';
+        }
+    </script>
+</body>
+
+</html>

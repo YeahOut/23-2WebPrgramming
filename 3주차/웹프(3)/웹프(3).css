@@ -1,0 +1,87 @@
+@font-face{
+    font-family : NanumPen;
+    src:url('NanumPen.ttf')format('truetype');
+}
+h1 {color : black; font-family : NanumPen; font-size : 20pt;}
+div {color : black; font-family : NanumPen; font-size:10pt;}
+header{
+    text-align : center;
+}
+nav{
+    background-color: #F0F8FF;
+    width : 1195px;
+}
+ul{ 
+    padding : 5px;
+    margin : 0px;
+}
+.horizon
+{
+    display : flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.horizon li:hover {
+    background-color: #FF00FF; 
+}
+.vertical
+{
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc; 
+    padding-left: 10px; 
+}
+.vertical li a:hover {
+    color: #FF00FF; 
+}
+.content
+{
+    color:blue;
+}
+.content2
+{
+    margin-left : 70px;
+}
+
+ul li{
+    padding : 3px
+}
+main{
+    padding-top:0;
+    padding : 10px 10px 10px 0px;
+    display : flex;
+}
+.box01 {
+    padding-top:0;
+    border: 1px solid #DADADA;
+    padding : 20px;
+    flex : 1;
+    width : 1153px;
+}
+.box02{
+    border: 1px solid #DADADA;
+    width : 200px;
+    padding : 20px;
+    flex : 2;
+    height : 130px;
+    
+}
+footer{
+    border: 1px solid #DADADA;
+    padding : 10px 10px 10px 10px;
+    text-align : left;
+    width : 1175px;
+}
+.box03{
+    border: 1px solid #DADADA;
+    padding : 16px;
+    width : 900px;
+    margin-left : 20px;
+}
+
+
+ul li a {
+    text-decoration: none; 
+    color: black; 
+    padding: 5px 10px; 
+}
