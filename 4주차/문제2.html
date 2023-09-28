@@ -2,6 +2,7 @@
 <html lang="ko">
 
 <head>
+    <title> Q2 </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Manipulation</title>
@@ -30,9 +31,9 @@
         });
 
         var imgElement = document.createElement('img');
+        imgElement.setAttribute('width', '1000px');
         imgElement.setAttribute('src', 'back.jpg');
         imgElement.setAttribute('alt', 'back.JPG');
-        imgElement.setAttribute('width', '1000px');
         document.body.appendChild(imgElement);
     </script>
 </body>
