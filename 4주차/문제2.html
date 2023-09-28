@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -7,34 +7,32 @@
     <title>DOM Manipulation</title>
     <style>
         #div1, #div2 {
-            border: 1px solid black;
-            padding: 10px;
-            margin-top: 10px;
+            padding: px;
+            margin-top: 5px;
             cursor: pointer;
         }
     </style>
 </head>
 
 <body>
-    <div id="div1">DIV1: Click me to change background and text color</div>
-    <div id="div2">DIV2: Click me to append text</div>
+    <div id="div1">여긴 DIV1 영역</div>
+    <div id="div2">여긴 DIV2 영역</div>
 
     <script>
         document.getElementById('div1').addEventListener('click', function() {
-            this.style.backgroundColor = 'blue';
+            this.style.backgroundColor = 'black';
             this.style.color = 'white';
         });
 
         document.getElementById('div2').addEventListener('click', function() {
-            var newText = document.createTextNode(" Appended Text.");
+            var newText = document.createTextNode("div2의 영역이죠");
             this.appendChild(newText);
         });
 
-        // 이미지 생성 및 속성 설정
         var imgElement = document.createElement('img');
-        imgElement.setAttribute('src', 'back.jpg'); // 'back.jpg' 파일의 경로를 설정하세요.
+        imgElement.setAttribute('src', 'back.jpg');
         imgElement.setAttribute('alt', 'back.JPG');
-        imgElement.setAttribute('width', '150px');
+        imgElement.setAttribute('width', '1000px');
         document.body.appendChild(imgElement);
     </script>
 </body>
