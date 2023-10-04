@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #image {
+            max-width: 500px;
+        }
+        .button-container {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="button-container">
+    <a id="movePage" href="https://www.dongguk.edu">페이지 이동</a>
+    <button id="changeURL">URL 변경</button>
+</div>
+<img id="image" src="1.png" alt="Image">
+<br>
+<button id="changeImage">사진 변경</button>
+
+<script>
+    $(document).ready(function(){
+        $("#changeURL").click(function(){
+            var currentURL = $("#movePage").attr("href");
+            if(currentURL === "https://www.dongguk.edu") {
+                $("#movePage").attr("href", "https://lib.dongguk.edu");
+            } else {
+                $("#movePage").attr("href", "https://www.dongguk.edu");
+            }
+            alert("URL이 변경되었습니다.");
+        });
+
+        $("#changeImage").click(function(){
+            var currentSrc = $("#image").attr("src");
+            if(currentSrc === "1.png") {
+                $("#image").attr("src", "2.png");
+            } else {
+                $("#image").attr("src", "1.png");
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
