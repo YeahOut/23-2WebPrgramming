@@ -140,7 +140,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="practice" path="/practice" reloadable="true" source="org.eclipse.jst.jee.server:practice"/><Context docBase="Q1" path="/Q1" reloadable="true" source="org.eclipse.jst.jee.server:Q1"/><Context docBase="Q2" path="/Q2" reloadable="true" source="org.eclipse.jst.jee.server:Q2"/><Context docBase="Q2022111948_1" path="/Q2022111948_1" reloadable="true" source="org.eclipse.jst.jee.server:Q2022111948_1"/><Context docBase="Q2022111948_2" path="/Q2022111948_2" reloadable="true" source="org.eclipse.jst.jee.server:Q2022111948_2"/></Host>
+      <Context docBase="practice" path="/practice" reloadable="true" source="org.eclipse.jst.jee.server:practice"/><Context docBase="Q2" path="/Q2" reloadable="true" source="org.eclipse.jst.jee.server:Q2"/><Context docBase="Q2022111948_1" path="/Q2022111948_1" reloadable="true" source="org.eclipse.jst.jee.server:Q2022111948_1"/><Context docBase="Q2022111948_2" path="/Q2022111948_2" reloadable="true" source="org.eclipse.jst.jee.server:Q2022111948_2"/><Context docBase="Q1" path="/Q1" reloadable="true" source="org.eclipse.jst.jee.server:Q1"/><Context docBase="Q3" path="/Q3" reloadable="true" source="org.eclipse.jst.jee.server:Q3"/><Context docBase="Q4" path="/Q4" reloadable="true" source="org.eclipse.jst.jee.server:Q4"/></Host>
     </Engine>
   </Service>
 </Server>
